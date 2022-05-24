@@ -91,7 +91,7 @@ module.exports = {
             throwError(title, 400, 'Missing parameters', 'Missing RFCCompany parameter');
         }
         //set request path
-        path = operationPath + '/info1' + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
+        path = operationPath + '/info' + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
         try {
             //Send request to adapter
             response = await adapter.restRequest(verb, request, path, authMethod);
