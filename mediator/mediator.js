@@ -3,7 +3,7 @@ var adapter = require('../adapter/adapter'),
 
 const verb = 'GET',
     authMethod = 'apiKey',
-    operationPath = '/zwscom/Mox/api/Employee/',
+    operationPath = '/zwscom/Mox/api/Employee',
     title = 'Mediator-Error',
     internalError = 'Internal Error';
 
