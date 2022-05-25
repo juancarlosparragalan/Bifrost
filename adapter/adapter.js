@@ -64,9 +64,7 @@ module.exports = {
             else {
                 throwError(title, 500, 'Error on Transaction', req.statusText);
             }
-
         } catch (error) {
-            console.log(error);
             throwError(title, 500, 'Transaction Error', error.errorDescription);
         }
         return response;

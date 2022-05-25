@@ -9,6 +9,7 @@ const {
     ms,
     prettyPrint
 } = format;
+
 const service = 'ZAFIRO-CONNECTOR';
 
 const logger = createLogger({
