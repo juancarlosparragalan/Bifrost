@@ -55,11 +55,12 @@ module.exports = {
                 }
             } else {
                 if (level == 'error') {
-                    logger.error(message + ' - ' + result)
-                    console.error(message + ' - ' + result)
+                    logger.error(message + ' - ' + result);
+                    console.error(message + ' - ' + result);
                 } else {
                     logger.info(message + ' - ' + result)
-                    console.log(message + ' - ' + result)
+                    //logger.info(message,[result]);
+                    console.log(message + ' - ' + result);
                 }
             }
         }

@@ -1,7 +1,15 @@
-const express = require("express");
-const bodyParser = require('body-parser');
-const mediator = require('./mediator/mediator');
-var cors = require('cors');
+const express = require("express"),
+  bodyParser = require('body-parser'),
+  mediator = require('./mediator/mediator');
+var cors = require('cors'),
+  response = {
+    'metaData': {
+      'status': '',
+      'messageId': '',
+    },
+    'data': {}
+  },
+  messageId = '';
 
 const app = express();
 app.use(bodyParser.urlencoded({
@@ -9,17 +17,6 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.use(cors());
-let usuario = {
-  name: '',
-  documentNumber: '',
-  transactionId: ''
-};
-let response = {
-  error: true,
-  code: 500,
-  message: 'Internal Error'
-};
-
 app.get('/', function (req, res) {
   response = {
     code: 200,
@@ -28,8 +25,14 @@ app.get('/', function (req, res) {
   res.send(response);
 });
 app.get('/employee/validation', async function (req, res) {
-  console.log(req);
-  response = await mediator.employeeValidation(req.query.federalId, req.query.RFCCompany);
+  messageId = req.headers['message-id'];
+  try {
+    response = await mediator.employeeValidation(req.query.federalId, req.query.RFCCompany, messageId);
+  } catch (error) {
+    setErrorMessage(error);
+    res.status(error.errorCode || 500);
+  }
+  res.status(response.metaData.statusCode);
   console.log(response);
   res.header('Access-Control-Allow-Origin', "*");
   res.header('Access-Control-Allow-Headers', "*");
@@ -38,7 +41,14 @@ app.get('/employee/validation', async function (req, res) {
 });
 
 app.get('/employee/information', async function (req, res) {
-  response = await mediator.employeeInformation(req.query.federalId, req.query.RFCCompany);
+  messageId = req.headers['message-id'];
+  try {
+    response = await mediator.employeeInformation(req.query.federalId, req.query.RFCCompany, messageId);
+  } catch (error) {
+    setErrorMessage(error);
+    res.status(error.errorCode || 500);
+  }
+  res.status(response.metaData.statusCode);
   console.log(response);
   res.header('Access-Control-Allow-Origin', "*");
   res.header('Access-Control-Allow-Headers', "*");
@@ -54,6 +64,18 @@ app.use(function (req, res, next) {
   };
   res.status(404).send(response);
 });
+
 app.listen(3000, () => {
   console.log("El servidor está inicializado en el puerto 3000");
 });
+
+function setErrorMessage(error) {
+  response.metaData.status = error.status || 'error';
+  response.metaData.messageId = error.messageId || messageId;
+  response.metaData.statusCode = error.errorCode || 500;
+  response.data = {
+    message: error.errorMessage || 'Internal Server Error',
+    description: error.errorDescription || 'Error desconocido'
+  }
+  return response;
+}

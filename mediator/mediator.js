@@ -7,6 +7,14 @@ const verb = 'GET',
     title = 'Mediator-Error',
     internalError = 'Internal Error';
 
+var result = {
+    'metaData': {
+        'status': '',
+        'messageId': '',
+    },
+    'data': {}
+}
+
 function setErrorMessage() {
     return {
         ENOTFOUND: 'Not found Endpoint to establish a backside connection',
@@ -26,10 +34,11 @@ function throwError(errorName = title, errorCode = 500, errorMessage = internalE
 }
 
 module.exports = {
-    async employeeValidation(federalId, RFCCompany) {
-        logger.loggerFunction('Employee Validation', 'Start');
-        let result = {},
-            request, path, response;
+    async employeeValidation(federalId, RFCCompany, messageId) {
+        logger.loggerFunction('Employee Validation Start', messageId);
+        let request, path, response;
+        //Sets the messageId
+        result.metaData.messageId = messageId;
         //validacion de parametros de entrada
         if (!federalId) {
             throwError(title, 400, 'Missing parameters', 'Missing federalId parameter');
@@ -45,44 +54,37 @@ module.exports = {
         } catch (error) {
             //Catch error
             if (error.errorDescription) {
-                return result = {
-                    'status': 'error',
-                    'message': setErrorMessage()[error.errorDescription.code] || 'Internal Server Error'
-                };
+                result.metaData.status = 'error';
+                result.metaData.statusCode = 500;
+                result.data = setErrorMessage()[error.errorDescription.code] || 'Internal Server Error';
+                return result;
             }
         }
         //If response is not ok
         if (response.code != 200) {
-            result = {
-                status: 'fail',
-                RFCCompany,
-                message: response.body.msg
-            }
+            result.metaData.status = 'fail';
+            result.metaData.statusCode = response.code;
+            result.metaData.RFCCompany = RFCCompany;
+            result.data = response.body.msg;
         } else
             //If response has invalid data
             if (!response.body.data.employeeIsValid || !response.body.data.employeeIsActive) {
-                result = {
-                    status: 'fail',
-                    federalId,
-                    message: response.body.data
-                }
+                result.metaData.status = 'fail';
+                result.metaData.statusCode = 404;
+                result.metaData.federalId = federalId;
+                result.data = response.body.data;
             } else {
                 //If response is ok
-                result = {
-                    status: 'success',
-                    message: response.body.data
-                }
+                result.metaData.status = 'success';
+                result.metaData.statusCode = response.code;
+                result.data = response.body.data;
             }
-        //logger response
-        //logger.loggerFunction('Mediator-Response', result, 'info');
-
-        //return response
         return result;
     },
-    async employeeInformation(federalId, RFCCompany) {
-        logger.loggerFunction('Employee Information', 'Start');
-        let result = {},
-            request, path, response;
+    async employeeInformation(federalId, RFCCompany, messageId) {
+        logger.loggerFunction('Employee Information Start', messageId);
+        result.metaData.messageId = messageId;
+        let request, path, response;
         //validacion de parametros de entrada
         if (!federalId) {
             throwError(title, 400, 'Missing parameters', 'Missing federalId parameter');
@@ -98,25 +100,23 @@ module.exports = {
         } catch (error) {
             //Catch error
             if (error.errorDescription) {
-                return result = {
-                    'status': 'error',
-                    'message': setErrorMessage()[error.errorDescription.code] || 'Internal Server Error'
-                };
+                result.metaData.status = 'error';
+                result.metaData.statusCode = 500;
+                result.data = setErrorMessage()[error.errorDescription.code] || 'Internal Server Error';
+                return result;
             }
         }
         //If response is not ok
         if (response.code != 200) {
-            result = {
-                status: 'fail',
-                RFCCompany,
-                message: response.body.msg
-            }
+            result.metaData.status = 'fail';
+            result.metaData.statusCode = response.code;
+            result.metaData.RFCCompany = RFCCompany;
+            result.data = response.body.msg;
         } else {
             //If response is ok
-            result = {
-                status: 'success',
-                message: response.body.data
-            }
+            result.metaData.status = 'success';
+            result.metaData.statusCode = response.code;
+            result.data = response.body.data;
         }
         //return response
         return result;
