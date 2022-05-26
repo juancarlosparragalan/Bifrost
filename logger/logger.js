@@ -10,7 +10,9 @@ const {
     prettyPrint
 } = format;
 
-const service = 'Bifrost-Zafiro';
+const {
+    config
+} = require('../config/config'), service = config.serviceName;
 
 const logger = createLogger({
     level: 'info',
@@ -35,32 +37,31 @@ module.exports = {
     async loggerFunction(message, result = null, level = 'info') {
         if (!result) {
             if (level == 'error') {
-                logger.error(message)
+                logger.error(message,[{msgId:process.env.MSGID}])
                 console.error(message)
             } else {
-                logger.info(message)
+                logger.info(message,[{msgId:process.env.MSGID}])
                 console.log(message)
             }
         } else {
             if (typeof result == 'object') {
                 if (level == 'error') {
-                    logger.error(message);
-                    logger.error(result);
+                    logger.error(message,[{msgId:process.env.MSGID}]);
+                    logger.error(result,[{msgId:process.env.MSGID}]);
                     console.error(message);
                     console.error(result);
                 } else {
-                    logger.info(message);
-                    logger.info(result);
+                    logger.info(message,[{msgId:process.env.MSGID}]);
+                    logger.info(result,[{msgId:process.env.MSGID}]);
                     console.log(message);
                     console.log(result);
                 }
             } else {
                 if (level == 'error') {
-                    logger.error(message + ' - ' + result);
+                    logger.error(message + ' - ' + result,[{msgId:process.env.MSGID}]);
                     console.error(message + ' - ' + result);
                 } else {
-                    logger.info(message + ' - ' + result)
-                    //logger.info(message,[result]);
+                    logger.info(message + ' - ' + result,[{msgId:process.env.MSGID}]);
                     console.log(message + ' - ' + result);
                 }
             }

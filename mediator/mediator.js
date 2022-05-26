@@ -35,15 +35,18 @@ function throwError(errorName = title, errorCode = 500, errorMessage = internalE
 
 module.exports = {
     async employeeValidation(federalId, RFCCompany, messageId) {
-        logger.loggerFunction('Employee Validation Start', messageId);
-
-       console.log(process.env);
-
-        let request, path, response;
         //Sets the messageId
         if (!messageId) {
+            process.env.MSGID = '000-000-000';
             throwError(title, 400, 'Missing parameters', 'Missing message-id Header');
         }
+        process.env.MSGID = messageId;
+        logger.loggerFunction('Employee Validation Start', messageId);
+
+        console.log(process.env);
+
+        let request, path, response;
+
         result.metaData.messageId = messageId;
         //validacion de parametros de entrada
         if (!federalId) {

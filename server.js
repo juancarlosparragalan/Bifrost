@@ -1,6 +1,9 @@
 const express = require("express"),
   bodyParser = require('body-parser'),
-  mediator = require('./mediator/mediator');
+  mediator = require('./mediator/mediator'),
+  {
+    config
+  } = require('./config/config');
 var cors = require('cors'),
   response = {
     'metaData': {
@@ -17,6 +20,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.use(cors());
+//healt server
 app.get('/', function (req, res) {
   response = {
     code: 200,
@@ -24,6 +28,7 @@ app.get('/', function (req, res) {
   };
   res.send(response);
 });
+//Employee validation
 app.get('/employee/validation', async function (req, res) {
   messageId = req.headers['message-id'];
   try {
@@ -39,7 +44,7 @@ app.get('/employee/validation', async function (req, res) {
   res.header('Access-Control-Allow-Methods', "*");
   res.send(response);
 });
-
+//Employee information
 app.get('/employee/information', async function (req, res) {
   messageId = req.headers['message-id'];
   try {
@@ -65,8 +70,8 @@ app.use(function (req, res, next) {
   res.status(404).send(response);
 });
 
-app.listen(3000, () => {
-  console.log("El servidor está inicializado en el puerto 3000");
+app.listen(config.port, () => {
+  console.log("El servidor está inicializado en el puerto "+config.port);
 });
 
 function setErrorMessage(error) {
