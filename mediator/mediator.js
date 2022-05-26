@@ -1,9 +1,9 @@
 var adapter = require('../adapter/adapter'),
     logger = require('../logger/logger');
-
-const verb = 'GET',
-    authMethod = 'apiKey',
-    operationPath = '/zwscom/Mox/api/Employee',
+const {
+    config
+} = require('../config/config'),
+    verb = 'GET',
     title = 'Mediator-Error',
     internalError = 'Internal Error';
 
@@ -36,8 +36,14 @@ function throwError(errorName = title, errorCode = 500, errorMessage = internalE
 module.exports = {
     async employeeValidation(federalId, RFCCompany, messageId) {
         logger.loggerFunction('Employee Validation Start', messageId);
+
+       console.log(process.env);
+
         let request, path, response;
         //Sets the messageId
+        if (!messageId) {
+            throwError(title, 400, 'Missing parameters', 'Missing message-id Header');
+        }
         result.metaData.messageId = messageId;
         //validacion de parametros de entrada
         if (!federalId) {
@@ -47,10 +53,10 @@ module.exports = {
             throwError(title, 400, 'Missing parameters', 'Missing RFCCompany parameter');
         }
         //set request path
-        path = operationPath + '/valid' + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
+        path = config.basicPath + '/valid' + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
         try {
             //Send request to adapter
-            response = await adapter.restRequest(verb, request, path, authMethod);
+            response = await adapter.restRequest(verb, request, path, config.authMethod);
         } catch (error) {
             //Catch error
             if (error.errorDescription) {
@@ -93,10 +99,10 @@ module.exports = {
             throwError(title, 400, 'Missing parameters', 'Missing RFCCompany parameter');
         }
         //set request path
-        path = operationPath + '/info' + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
+        path = config.basicPath + '/info' + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
         try {
             //Send request to adapter
-            response = await adapter.restRequest(verb, request, path, authMethod);
+            response = await adapter.restRequest(verb, request, path, config.authMethod);
         } catch (error) {
             //Catch error
             if (error.errorDescription) {

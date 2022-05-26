@@ -3,14 +3,13 @@ var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest,
     logger = require('../logger/logger'),
     req = new XMLHttpRequest();
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; //revisar despues
-const host = 'sandbox.zafirosoft.com',
-    port = '443',
-    path = '/Employee/valid?{federalId}&{RFCCompany}',
-    apiKey = '123',
-    apiSecret = '132',
+const {
+    config
+} = require('../config/config'),
     basicAuth = '', //traer todos estos campos de variables de entorno o de base de datos.
     title = 'Adapter-Error',
     internalError = 'Internal Server Error';
+
 
 function getUrl(host, port, path) {
     if (!port) {
@@ -32,9 +31,8 @@ function throwError(errorName = title, errorCode = 500, errorMessage = internalE
 
 module.exports = {
     async restRequest(verb, request = null, path, authenticationMethod = null) {
-        var Content = 'application/json', //type json
-            response = {},
-            backend = getUrl(host, port, path); //set backend url
+        var response = {},
+            backend = getUrl(config.BackendHost, config.BackendPort, path); //set backend url
         try {
             req.open(verb, backend, false);
             logger.loggerFunction('Sending Request to', backend);
@@ -45,12 +43,12 @@ module.exports = {
                 req.setRequestHeader('Authorization', 'Basic ' + basicAuth);
             } else
             if (authenticationMethod == 'apiKey') {
-                req.setRequestHeader('x-api-key', apiKey);
-                req.setRequestHeader('x-api-secret', apiSecret);
+                req.setRequestHeader('x-api-key', config.apiKey);
+                req.setRequestHeader('x-api-secret', config.apiSecret);
             }
-            req.setRequestHeader('Content-Type', Content); //set content type
+            req.setRequestHeader('Content-Type', config.ContentType); //set content type
             req.send(JSON.stringify(request)); //send request
-            logger.loggerFunction('Req-Logging', req);
+            logger.loggerFunction('Full Response Logging', req);
             if (req.readyState == 4 && req.status == 200) {
                 response.code = req.status;
                 response.body = JSON.parse(req.responseText);
@@ -60,8 +58,7 @@ module.exports = {
                 response.code = req.status;
                 response.body = JSON.parse(req.responseText);
                 logger.loggerFunction('Error Response', response, 'error');
-            } 
-            else {
+            } else {
                 throwError(title, 500, 'Error on Transaction', req.statusText);
             }
         } catch (error) {

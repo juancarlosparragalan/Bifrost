@@ -10,7 +10,7 @@ const {
     prettyPrint
 } = format;
 
-const service = 'ZAFIRO-CONNECTOR';
+const service = 'Bifrost-Zafiro';
 
 const logger = createLogger({
     level: 'info',
