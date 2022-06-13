@@ -1,2 +1,2 @@
-# Bifrost
- Bifrost connector
+# BifrostZafiro
+Backend Connector to Zafiro Software

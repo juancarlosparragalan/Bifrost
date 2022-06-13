@@ -1,4 +1,4 @@
-//lib ADAPTER
+//lib ADAPTER v1.5
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest,
     logger = require('../logger/logger'),
     req = new XMLHttpRequest();
@@ -38,6 +38,7 @@ module.exports = {
             logger.loggerFunction('Sending Request to', backend);
             logger.loggerFunction('Verb request', verb);
             logger.loggerFunction('Authentication method', authenticationMethod);
+            logger.loggerFunction('Request Body', request);
             //evaluate authentication method
             if (authenticationMethod == 'basic') {
                 req.setRequestHeader('Authorization', 'Basic ' + basicAuth);
@@ -54,6 +55,15 @@ module.exports = {
                 response.body = JSON.parse(req.responseText);
                 logger.loggerFunction('Success Response', response);
             } else
+            if (req.status == 404 && req.responseText) {
+                response.code = req.status;
+                if (typeof req.responseText == 'string') {
+                    response.body = 'Backend URL not found';
+                } else {
+                    response.body = JSON.parse(req.responseText);
+                }
+                throwError(title, req.status, 'Error on Transaction', response.body);
+            } else
             if (req.status > 200 && req.responseText) {
                 response.code = req.status;
                 response.body = JSON.parse(req.responseText);
@@ -62,7 +72,7 @@ module.exports = {
                 throwError(title, 500, 'Error on Transaction', req.statusText);
             }
         } catch (error) {
-            throwError(title, 500, 'Transaction Error', error.errorDescription);
+            throwError(title, error.errorCode || 500, error.errorMessage || 'Transaction Error', error.errorDescription);
         }
         return response;
     }
