@@ -103,7 +103,14 @@ module.exports = {
     },
     async postTXN(body, messageId) {
         //Declare variables
-        let request, path, response;
+        let request, path, response, result = {
+            'metaData': {
+                'status': '',
+                'messageId': ''
+            },
+            'data': {}
+        },
+        dateTime = new Date().toISOString();
         //Sets the messageId
         if (!messageId) {
             process.env.MSGID = '000-000-000';
@@ -118,7 +125,7 @@ module.exports = {
         result.metaData.messageId = messageId;
         result.metaData.dateTime = dateTime;
         result.metaData.apiName = microservice;
-        result.metaData.path = path;
+        //result.metaData.path = path;
         //validacion de parametros de entrada
         validateRequest(body, postTXNModel);
         request = body.data;
