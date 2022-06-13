@@ -31,6 +31,14 @@ app.get('/', function (req, res) {
   };
   res.send(response);
 });
+//Delete
+app.post('/serverUp', function (req, res) {
+  response = {
+    code: 200,
+    message: 'Server Up!'
+  };
+  res.send(response);
+});
 
 //Employee validation
 app.get('/employee/validation', async function (req, res) {

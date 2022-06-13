@@ -10,7 +10,6 @@ const {
     title = 'Adapter-Error',
     internalError = 'Internal Server Error';
 
-
 function getUrl(host, port, path) {
     if (!port) {
         port = '443';
@@ -31,8 +30,9 @@ function throwError(errorName = title, errorCode = 500, errorMessage = internalE
 
 module.exports = {
     async restRequest(verb, request = null, path, authenticationMethod = null) {
-        var response = {},
+        var response = {}, contentTypeHeader,
             backend = getUrl(config.BackendHost, config.BackendPort, path); //set backend url
+            //backend = 'https://localhost:8000/serverUp';
         try {
             req.open(verb, backend, false);
             logger.loggerFunction('Sending Request to', backend);
@@ -47,7 +47,9 @@ module.exports = {
                 req.setRequestHeader('x-api-key', config.apiKey);
                 req.setRequestHeader('x-api-secret', config.apiSecret);
             }
-            req.setRequestHeader('Content-Type', config.ContentType); //set content type
+            contentTypeHeader = req.getRequestHeader('Content-Type');
+            if (!contentTypeHeader)
+                req.setRequestHeader('Content-Type', config.ContentType); //set content type
             req.send(JSON.stringify(request)); //send request
             logger.loggerFunction('Full Response Logging', req);
             if (req.readyState == 4 && req.status == 200) {
