@@ -30,15 +30,16 @@ function throwError(errorName = title, errorCode = 500, errorMessage = internalE
 
 module.exports = {
     async restRequest(verb, request = null, path, authenticationMethod = null) {
-        var response = {}, contentTypeHeader,
+        var response = {},
+            contentTypeHeader,
             backend = getUrl(config.BackendHost, config.BackendPort, path); //set backend url
-            //backend = 'https://localhost:8000/serverUp';
+        //backend = 'https://localhost:8000/serverUp';
         try {
             req.open(verb, backend, false);
             logger.loggerFunction('Sending Request to', backend);
             logger.loggerFunction('Verb request', verb);
             logger.loggerFunction('Authentication method', authenticationMethod);
-            logger.loggerFunction('Request Body', request);
+            //logger.loggerFunction('Request Body', request);
             //evaluate authentication method
             if (authenticationMethod == 'basic') {
                 req.setRequestHeader('Authorization', 'Basic ' + basicAuth);
@@ -50,6 +51,7 @@ module.exports = {
             contentTypeHeader = req.getRequestHeader('Content-Type');
             if (!contentTypeHeader)
                 req.setRequestHeader('Content-Type', config.ContentType); //set content type
+            logger.loggerFunction('Content-Type', config.ContentType);
             req.send(JSON.stringify(request)); //send request
             logger.loggerFunction('Full Response Logging', req);
             if (req.readyState == 4 && req.status == 200) {

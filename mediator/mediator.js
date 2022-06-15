@@ -43,7 +43,7 @@ module.exports = {
         process.env.MSGID = messageId;
         logger.loggerFunction('Employee Validation Start', messageId);
 
-        console.log(process.env);
+        //console.log(process.env);
 
         let request, path, response;
 
