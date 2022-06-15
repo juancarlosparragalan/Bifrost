@@ -39,7 +39,7 @@ module.exports = {
             logger.loggerFunction('Sending Request to', backend);
             logger.loggerFunction('Verb request', verb);
             logger.loggerFunction('Authentication method', authenticationMethod);
-            //logger.loggerFunction('Request Body', request);
+            logger.loggerFunction('Request Body', request);
             //evaluate authentication method
             if (authenticationMethod == 'basic') {
                 req.setRequestHeader('Authorization', 'Basic ' + basicAuth);
