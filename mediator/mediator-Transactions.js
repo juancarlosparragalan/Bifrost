@@ -147,12 +147,12 @@ module.exports = {
         if (response.code != 200) {
             result.metaData.status = 'fail';
             result.metaData.statusCode = response.code;
-            result.data = response.body.msg;
+            result.data = response.body;
         } else {
             //If response is ok
             result.metaData.status = 'success';
             result.metaData.statusCode = response.code;
-            result.data = response.body.data;
+            result.data = response.body;
         }
         logger.loggerFunction('postTXN Result', result);
         return result;
