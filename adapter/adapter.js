@@ -51,7 +51,9 @@ module.exports = {
             contentTypeHeader = req.getRequestHeader('Content-Type');
             if (!contentTypeHeader)
                 req.setRequestHeader('Content-Type', config.ContentType); //set content type
-            logger.loggerFunction('Content-Type', config.ContentType);
+            //logger.loggerFunction('Content-Type', config.ContentType);
+            console.log('req----');
+            console.log(req);
             req.send(JSON.stringify(request)); //send request
             logger.loggerFunction('Full Response Logging', req);
             if (req.readyState == 4 && req.status == 200) {
