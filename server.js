@@ -122,6 +122,7 @@ app.listen(config.port, () => {
 });
 
 function setErrorMessage(error) {
+  console.log(error);
   response.metaData.status = error.status || 'error';
   response.metaData.dateTime = dateTime;
   response.metaData.messageId = error.messageId || messageId;

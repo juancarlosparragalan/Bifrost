@@ -22,6 +22,13 @@ function setErrorMessage() {
     };
 }
 
+function getUrl(host, port, path) {
+    if (!port) {
+        port = '443';
+    }
+    return 'https://' + host + ':' + port + path;
+}
+
 function throwError(errorName = title, errorCode = 500, errorMessage = internalError, errorDescription = internalError) {
     let error = {
         errorName,
@@ -43,9 +50,8 @@ module.exports = {
         process.env.MSGID = messageId;
         logger.loggerFunction('Employee Validation Start', messageId);
 
-        //console.log(process.env);
-
-        let request, path, response;
+        let request, path, response, endpoint,
+            operationPath = '/Employee/valid';
 
         result.metaData.messageId = messageId;
         //validacion de parametros de entrada
@@ -55,11 +61,14 @@ module.exports = {
         if (!RFCCompany) {
             throwError(title, 400, 'Missing parameters', 'Missing RFCCompany parameter');
         }
-        //set request path
-        path = config.basicPath + '/valid' + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
+
+        //set backend endpoint
+        endpoint = getUrl(config.BackendHost, config.BackendPort, config.basePath);
+        endpoint = endpoint + operationPath + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
+
         try {
             //Send request to adapter
-            response = await adapter.restRequest(verb, request, path, config.authMethod);
+            response = await adapter.sendRequest(verb, request, endpoint, config.authMethod);
         } catch (error) {
             //Catch error
             if (error.errorDescription) {
@@ -91,9 +100,15 @@ module.exports = {
         return result;
     },
     async employeeInformation(federalId, RFCCompany, messageId) {
+        //Sets the messageId
+        if (!messageId) {
+            process.env.MSGID = '000-000-000';
+            throwError(title, 400, 'Missing parameters', 'Missing message-id Header');
+        }
+        process.env.MSGID = messageId;
         logger.loggerFunction('Employee Information Start', messageId);
         result.metaData.messageId = messageId;
-        let request, path, response;
+        let request, path, response, endpoint, operationPath = '/Employee/info';
         //validacion de parametros de entrada
         if (!federalId) {
             throwError(title, 400, 'Missing parameters', 'Missing federalId parameter');
@@ -101,11 +116,14 @@ module.exports = {
         if (!RFCCompany) {
             throwError(title, 400, 'Missing parameters', 'Missing RFCCompany parameter');
         }
+        //set backend endpoint
+        endpoint = getUrl(config.BackendHost, config.BackendPort, config.basePath);
+        endpoint = endpoint + operationPath + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
         //set request path
-        path = config.basicPath + '/info' + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
+        
         try {
             //Send request to adapter
-            response = await adapter.restRequest(verb, request, path, config.authMethod);
+            response = await adapter.sendRequest(verb, request, endpoint, config.authMethod);
         } catch (error) {
             //Catch error
             if (error.errorDescription) {
