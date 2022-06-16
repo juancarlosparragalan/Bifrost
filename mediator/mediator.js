@@ -7,13 +7,7 @@ const {
     title = 'Mediator-Error',
     internalError = 'Internal Error';
 
-var result = {
-    'metaData': {
-        'status': '',
-        'messageId': '',
-    },
-    'data': {}
-}
+
 
 function setErrorMessage() {
     return {
@@ -42,6 +36,14 @@ function throwError(errorName = title, errorCode = 500, errorMessage = internalE
 
 module.exports = {
     async employeeValidation(federalId, RFCCompany, messageId) {
+        var result = {
+                'metaData': {
+                    'status': '',
+                    'messageId': '',
+                },
+                'data': {}
+            },
+            dateTime = new Date().toISOString();
         //Sets the messageId
         if (!messageId) {
             process.env.MSGID = '000-000-000';
@@ -82,24 +84,35 @@ module.exports = {
         if (response.code != 200) {
             result.metaData.status = 'fail';
             result.metaData.statusCode = response.code;
-            result.metaData.RFCCompany = RFCCompany;
-            result.data = response.body.msg;
+            result.metaData.dateTime = dateTime;
+            result.data.message = 'Error From Backend';
+            result.data.description = response.body.msg;
         } else
             //If response has invalid data
             if (!response.body.data.employeeIsValid || !response.body.data.employeeIsActive) {
                 result.metaData.status = 'fail';
                 result.metaData.statusCode = 404;
-                result.metaData.federalId = federalId;
-                result.data = response.body.data;
+                result.metaData.dateTime = dateTime;
+                result.data.message = 'Error From Backend';
+                result.data.description = response.body.data;
             } else {
                 //If response is ok
                 result.metaData.status = 'success';
                 result.metaData.statusCode = response.code;
+                result.metaData.dateTime = dateTime;
                 result.data = response.body.data;
             }
         return result;
     },
     async employeeInformation(federalId, RFCCompany, messageId) {
+        var result = {
+                'metaData': {
+                    'status': '',
+                    'messageId': '',
+                },
+                'data': {}
+            },
+            dateTime = new Date().toISOString();
         //Sets the messageId
         if (!messageId) {
             process.env.MSGID = '000-000-000';
@@ -120,7 +133,7 @@ module.exports = {
         endpoint = getUrl(config.BackendHost, config.BackendPort, config.basePath);
         endpoint = endpoint + operationPath + '?RFCCompany=' + RFCCompany + '&federalId=' + federalId;
         //set request path
-        
+
         try {
             //Send request to adapter
             response = await adapter.sendRequest(verb, request, endpoint, config.authMethod);
@@ -129,6 +142,7 @@ module.exports = {
             if (error.errorDescription) {
                 result.metaData.status = 'error';
                 result.metaData.statusCode = 500;
+                result.metaData.dateTime = dateTime;
                 result.data = setErrorMessage()[error.errorDescription.code] || 'Internal Server Error';
                 return result;
             }
@@ -137,12 +151,14 @@ module.exports = {
         if (response.code != 200) {
             result.metaData.status = 'fail';
             result.metaData.statusCode = response.code;
-            result.metaData.RFCCompany = RFCCompany;
-            result.data = response.body.msg;
+            result.metaData.dateTime = dateTime;
+            result.data.message = 'Error From Backend';
+            result.data.description = response.body.msg;
         } else {
             //If response is ok
             result.metaData.status = 'success';
             result.metaData.statusCode = response.code;
+            result.metaData.dateTime = dateTime;
             result.data = response.body.data;
         }
         //return response
