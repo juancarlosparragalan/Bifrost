@@ -50,6 +50,7 @@ const logger = createLogger({
         transportInfo
     ],
 });
+
 module.exports = {
     async loggerFunction(message, result = null, level = 'info') {
         if (!result) {

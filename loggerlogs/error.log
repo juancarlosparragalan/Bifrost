@@ -1,0 +1,1841 @@
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Mediator-Error',
+  timestamp: '2022-05-26T15:21:15.986Z',
+  ms: '+11ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Mediator-Error',
+    errorCode: 400,
+    errorMessage: 'Missing parameters',
+    errorDescription: 'Missing federalId parameter'
+  },
+  timestamp: '2022-05-26T15:21:15.986Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T19:52:46.146Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T19:52:46.147Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-13T19:53:26.547Z',
+  ms: '+7ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-13T19:53:26.547Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'postTXN Result',
+  timestamp: '2022-06-13T19:53:26.550Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    metaData: {
+      status: 'error',
+      messageId: 'd1a1badc65349d61d7d2c2bc237584ca11',
+      dateTime: '2022-06-13T19:53:22.494Z',
+      apiName: 'Bifrost-Zafiro',
+      path: '/zwscom/Mox/api/Transaction/postTXN',
+      statusCode: 500
+    },
+    data: {
+      message: 'Transaction Error',
+      description: 'Internal Server Error'
+    }
+  },
+  timestamp: '2022-06-13T19:53:26.550Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T19:56:54.363Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T19:56:54.363Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T19:59:57.205Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T19:59:57.205Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:01:17.033Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:01:17.033Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:01:18.420Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:01:18.420Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:03:16.213Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:03:16.213Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:03:46.367Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:03:46.367Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:03:59.563Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:03:59.563Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:04:20.622Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:04:20.622Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:04:41.171Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:04:41.171Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:04:56.090Z',
+  ms: '+6ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:04:56.090Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:04:58.877Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:04:58.878Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:05:05.260Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:05:05.260Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:10:40.491Z',
+  ms: '+5ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:10:40.491Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:10:45.373Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:10:45.373Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:11:59.007Z',
+  ms: '+4ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:11:59.007Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:12:00.825Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:12:00.825Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:12:55.170Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:12:55.171Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:13:08.050Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:13:08.050Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Mediator-Transactions-Error',
+  timestamp: '2022-06-13T20:13:20.039Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Mediator-Transactions-Error',
+    errorCode: 400,
+    errorMessage: 'Bad Request',
+    errorDescription: 'Invalid data, no employeeInfo Found'
+  },
+  timestamp: '2022-06-13T20:13:20.039Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:13:25.905Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:13:25.905Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Mediator-Transactions-Error',
+  timestamp: '2022-06-13T20:14:07.127Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Mediator-Transactions-Error',
+    errorCode: 400,
+    errorMessage: 'Bad Request',
+    errorDescription: 'Invalid data, no employeeInfo Found'
+  },
+  timestamp: '2022-06-13T20:14:07.128Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:15:20.210Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:15:20.211Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:15:31.594Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca11' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:15:31.595Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:16:12.189Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:16:12.189Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:16:37.379Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:16:37.379Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:18:20.027Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:18:20.028Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:18:26.656Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:18:26.656Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:18:29.191Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:18:29.191Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:18:31.425Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:18:31.425Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:19:11.578Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:19:11.578Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-13T20:22:41.045Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: { ok: false, msg: 'El parámetro companyId es requerido.' }
+  },
+  timestamp: '2022-06-13T20:22:41.045Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-13T20:56:55.144Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-13T20:56:55.144Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'postTXN Result',
+  timestamp: '2022-06-13T20:56:55.145Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    metaData: {
+      status: 'error',
+      messageId: 'd1a1badc65349d61d7d2c2bc237584ca',
+      dateTime: '2022-06-13T20:56:49.906Z',
+      apiName: 'Bifrost-Zafiro',
+      path: '/zwscom/Mox/api/Transaction/postTXN',
+      statusCode: 500
+    },
+    data: {
+      message: 'Transaction Error',
+      description: 'Internal Server Error'
+    }
+  },
+  timestamp: '2022-06-13T20:56:55.145Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-13T20:58:52.036Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-13T20:58:52.037Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'postTXN Result',
+  timestamp: '2022-06-13T20:58:52.037Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: 'd1a1badc65349d61d7d2c2bc237584ca' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    metaData: {
+      status: 'error',
+      messageId: 'd1a1badc65349d61d7d2c2bc237584ca',
+      dateTime: '2022-06-13T20:58:41.722Z',
+      apiName: 'Bifrost-Zafiro',
+      path: '/zwscom/Mox/api/Transaction/postTXN',
+      statusCode: 500
+    },
+    data: {
+      message: 'Transaction Error',
+      description: 'Internal Server Error'
+    }
+  },
+  timestamp: '2022-06-13T20:58:52.038Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T17:51:07.521Z',
+  ms: '+6ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Error on Transaction',
+    errorDescription: { errno: -4077, code: 'ECONNRESET', syscall: 'read' }
+  },
+  timestamp: '2022-06-15T17:51:07.521Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T17:51:07.521Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Error on Transaction',
+    errorDescription: { errno: -4077, code: 'ECONNRESET', syscall: 'read' }
+  },
+  timestamp: '2022-06-15T17:51:07.521Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T18:04:22.101Z',
+  ms: '+7ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Error on Transaction',
+    errorDescription: { errno: -4077, code: 'ECONNRESET', syscall: 'read' }
+  },
+  timestamp: '2022-06-15T18:04:22.102Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T18:04:22.102Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Error on Transaction',
+    errorDescription: { errno: -4077, code: 'ECONNRESET', syscall: 'read' }
+  },
+  timestamp: '2022-06-15T18:04:22.102Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T18:08:03.324Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Error on Transaction',
+    errorDescription: { errno: -4077, code: 'ECONNRESET', syscall: 'read' }
+  },
+  timestamp: '2022-06-15T18:08:03.324Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T18:08:03.325Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Error on Transaction',
+    errorDescription: { errno: -4077, code: 'ECONNRESET', syscall: 'read' }
+  },
+  timestamp: '2022-06-15T18:08:03.325Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:04:54.488Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Error on Transaction',
+    errorDescription: { errno: -4077, code: 'ECONNRESET', syscall: 'read' }
+  },
+  timestamp: '2022-06-15T19:04:54.489Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:04:54.490Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Error on Transaction',
+    errorDescription: { errno: -4077, code: 'ECONNRESET', syscall: 'read' }
+  },
+  timestamp: '2022-06-15T19:04:54.490Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:05:27.318Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:05:27.318Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:05:41.185Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:05:41.185Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:05:43.807Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:05:43.807Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:10:29.574Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:10:29.574Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:35:16.091Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:35:16.092Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:35:20.621Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:35:20.622Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:37:49.246Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:37:49.247Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:37:50.502Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:37:50.502Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:54:45.249Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:54:45.250Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T19:55:23.313Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T19:55:23.313Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:48:48.366Z',
+  ms: '+447ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:48:48.366Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:48:50.782Z',
+  ms: '+443ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:48:50.782Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:48:53.669Z',
+  ms: '+799ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:48:53.669Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:48:55.169Z',
+  ms: '+445ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:48:55.169Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-15T23:54:25.791Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-15T23:54:25.791Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:54:33.530Z',
+  ms: '+760ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:54:33.531Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:54:36.748Z',
+  ms: '+461ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:54:36.748Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:54:37.991Z',
+  ms: '+493ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:54:37.991Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:55:13.449Z',
+  ms: '+455ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:55:13.449Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-15T23:55:14.830Z',
+  ms: '+735ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-15T23:55:14.830Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:10:24.402Z',
+  ms: '+451ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-16T00:10:24.402Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:10:34.075Z',
+  ms: '+444ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-16T00:10:34.075Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:15:03.057Z',
+  ms: '+466ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-16T00:15:03.057Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:15:12.162Z',
+  ms: '+430ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:15:12.162Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:15:20.972Z',
+  ms: '+481ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:15:20.973Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:15:40.700Z',
+  ms: '+444ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 400, body: { ok: false, msg: 'Compañía no registrada.' } },
+  timestamp: '2022-06-16T00:15:40.701Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:18:29.860Z',
+  ms: '+464ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:18:29.860Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:21:21.180Z',
+  ms: '+500ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:21:21.180Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:21:24.319Z',
+  ms: '+480ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:21:24.320Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:21:25.568Z',
+  ms: '+471ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:21:25.568Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:21:56.604Z',
+  ms: '+524ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:21:56.605Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:21:58.357Z',
+  ms: '+469ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:21:58.358Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:21:59.479Z',
+  ms: '+459ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:21:59.479Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:22:57.675Z',
+  ms: '+454ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:22:57.675Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:23:06.494Z',
+  ms: '+437ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:23:06.495Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:24:36.043Z',
+  ms: '+482ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:24:36.043Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:24:45.357Z',
+  ms: '+429ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:24:45.357Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:25:18.420Z',
+  ms: '+438ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:25:18.420Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:25:27.294Z',
+  ms: '+483ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    code: 400,
+    body: {
+      ok: false,
+      msg: 'Empleado no válido.',
+      data: {
+        RFC: '',
+        RFCcompany: 'AAA010101AAA',
+        employeeIsValid: false,
+        employeeIsActive: false,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-16T00:25:27.294Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Error Response',
+  timestamp: '2022-06-16T00:25:46.526Z',
+  ms: '+448ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: { code: 500, body: { ok: false, msg: 'Error interno' } },
+  timestamp: '2022-06-16T00:25:46.526Z',
+  ms: '+0ms'
+}

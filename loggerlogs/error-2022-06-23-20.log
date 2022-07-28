@@ -1,0 +1,21 @@
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-24T01:21:38.266Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-24T01:21:38.266Z',
+  ms: '+0ms'
+}

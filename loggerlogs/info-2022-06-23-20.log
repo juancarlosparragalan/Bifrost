@@ -1,0 +1,249 @@
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Employee Validation Start - 000002',
+  timestamp: '2022-06-24T01:21:36.971Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Sending Request to - https://sandbox.zafirosoft.com:443/zwscom/Mox/api/Employee/valid?RFCCompany=AAA010101AAA&federalId=DIGE761102MTSMLL00',
+  timestamp: '2022-06-24T01:21:36.974Z',
+  ms: '+3ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Verb request GET',
+  timestamp: '2022-06-24T01:21:36.975Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: 'Adapter-Error',
+  timestamp: '2022-06-24T01:21:38.266Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'error',
+  message: {
+    errorName: 'Adapter-Error',
+    errorCode: 500,
+    errorMessage: 'Transaction Error',
+    errorDescription: 'Internal Server Error'
+  },
+  timestamp: '2022-06-24T01:21:38.266Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Employee Validation Start - 000002',
+  timestamp: '2022-06-24T01:22:06.098Z',
+  ms: '+28s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Sending Request to - https://sandbox.zafirosoft.com:443/zwscom/Mox/api/Employee/valid?RFCCompany=AAA010101AAA&federalId=DIGE761102MTSMLL00',
+  timestamp: '2022-06-24T01:22:06.099Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Verb request GET',
+  timestamp: '2022-06-24T01:22:06.101Z',
+  ms: '+2ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Success Response',
+  timestamp: '2022-06-24T01:22:06.680Z',
+  ms: '+579ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: {
+    code: 200,
+    body: {
+      data: {
+        RFC: '',
+        RFCCompany: 'AAA010101AAA',
+        employeeIsValid: true,
+        employeeIsActive: true,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-24T01:22:06.681Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Employee Validation Start - 000002',
+  timestamp: '2022-06-24T01:22:11.485Z',
+  ms: '+5s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Sending Request to - https://sandbox.zafirosoft.com:443/zwscom/Mox/api/Employee/valid?RFCCompany=AAA010101AAA&federalId=DIGE761102MTSMLL00',
+  timestamp: '2022-06-24T01:22:11.486Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Verb request GET',
+  timestamp: '2022-06-24T01:22:11.487Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Success Response',
+  timestamp: '2022-06-24T01:22:11.946Z',
+  ms: '+459ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: {
+    code: 200,
+    body: {
+      data: {
+        RFC: '',
+        RFCCompany: 'AAA010101AAA',
+        employeeIsValid: true,
+        employeeIsActive: true,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-24T01:22:11.947Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Employee Validation Start - 000002',
+  timestamp: '2022-06-24T01:22:13.184Z',
+  ms: '+1s'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Sending Request to - https://sandbox.zafirosoft.com:443/zwscom/Mox/api/Employee/valid?RFCCompany=AAA010101AAA&federalId=DIGE761102MTSMLL00',
+  timestamp: '2022-06-24T01:22:13.184Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Verb request GET',
+  timestamp: '2022-06-24T01:22:13.185Z',
+  ms: '+1ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Success Response',
+  timestamp: '2022-06-24T01:22:13.621Z',
+  ms: '+436ms'
+}
+{
+  '0': { msgId: '000002' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: {
+    code: 200,
+    body: {
+      data: {
+        RFC: '',
+        RFCCompany: 'AAA010101AAA',
+        employeeIsValid: true,
+        employeeIsActive: true,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-24T01:22:13.621Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000003' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Employee Validation Start - 000003',
+  timestamp: '2022-06-24T01:23:55.278Z',
+  ms: '+2m'
+}
+{
+  '0': { msgId: '000003' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Sending Request to - https://sandbox.zafirosoft.com:443/zwscom/Mox/api/Employee/valid?RFCCompany=AAA010101AAA&federalId=DIGE761102MTSMLL00',
+  timestamp: '2022-06-24T01:23:55.278Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000003' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Verb request GET',
+  timestamp: '2022-06-24T01:23:55.278Z',
+  ms: '+0ms'
+}
+{
+  '0': { msgId: '000003' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: 'Success Response',
+  timestamp: '2022-06-24T01:23:55.767Z',
+  ms: '+489ms'
+}
+{
+  '0': { msgId: '000003' },
+  service: 'Bifrost-Zafiro',
+  level: 'info',
+  message: {
+    code: 200,
+    body: {
+      data: {
+        RFC: '',
+        RFCCompany: 'AAA010101AAA',
+        employeeIsValid: true,
+        employeeIsActive: true,
+        companyIsActive: true
+      }
+    }
+  },
+  timestamp: '2022-06-24T01:23:55.768Z',
+  ms: '+1ms'
+}
